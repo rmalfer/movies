@@ -4,7 +4,7 @@ const userRoutes = (app, fs) => {
     const dataPath = './data/movies.json';
 
     // READ
-    app.get('/users', (req, res) => {
+    app.get('/movies', (req, res) => {
         fs.readFile(dataPath, 'utf8', (err, data) => {
             if (err) {
                 throw err;
